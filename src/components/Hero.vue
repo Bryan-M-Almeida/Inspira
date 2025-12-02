@@ -70,6 +70,10 @@ section#inicio {
         flex-direction: column;
         gap: 3rem;
 
+        div.cta-container{
+            text-align: center;
+        }
+
         div.fotografo-container {
             width: 90%;
         }

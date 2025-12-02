@@ -50,7 +50,7 @@ section#galeria {
     background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: start;
     gap: 2rem;
 
     h2 {
@@ -74,11 +74,11 @@ section#galeria {
                 object-fit: cover;
                 border-radius: 12px;
                 transition: transform 0.2s ease, filter 0.2s ease;
-                filter: brightness(0.9);
+                filter: brightness(0.5);
                 cursor: pointer;
 
                 &:hover {
-                    filter: brightness(1);
+                    filter: brightness(0.95);
                 }
 
 

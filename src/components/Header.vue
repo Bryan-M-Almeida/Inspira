@@ -21,6 +21,12 @@ const abrirFechar = () => {
     }
 };
 
+/* const search = ref();
+
+const pesquisar = () => {
+
+} */
+
 
 
 </script>
@@ -31,8 +37,9 @@ const abrirFechar = () => {
             <img :src="logo" alt="Logo">
 
             <div class="links">
-                <span>
+                <span class="search-container">
                     <font-awesome-icon :icon="['fas', 'search']" />
+                    <input type="search" name="" id="" placeholder="Pesquisar">
                 </span>
                 <ul>
                     <li><a href="#inicio">Início</a></li>
@@ -56,8 +63,8 @@ const abrirFechar = () => {
 
             <ul class="menu fechado" ref="menu">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="galeria">Galeria</a></li>
-                <li><a href="favoritos">Favoritos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#favoritos">Favoritos</a></li>
             </ul>
         </nav>
     </header>
@@ -85,6 +92,20 @@ header {
         img {
             width: 3%;
             height: 1%;
+        }
+
+        span.search-container {
+            display: flex;
+            align-items: center;
+            background-color: none;
+            gap: 1rem;
+
+            input[type="search"] {
+                display: none;
+                outline: none;
+                border: none;
+                background-color: transparent;
+            }
         }
 
 
