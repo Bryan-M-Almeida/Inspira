@@ -27,39 +27,51 @@ section#inicio {
     width: 100%;
     height: auto;
     justify-content: space-between;
-    padding: 15vh 5vw;
+    padding: 5rem 2rem;
     align-items: center;
 
     div.cta-container {
         display: flex;
         flex-direction: column;
-        gap: 2vh;
+        gap: 2rem;
 
         h1 {
-            font-size: 3vw;
+            font-size: 2.5rem;
             font-family: 'Poppins';
             color: #262626;
         }
 
         span.insp {
             color: #E1306C;
-            font-size: 4vw;
+            font-size: 2.9rem;
             font-weight: bolder;
         }
 
         p {
-            font-size: 1.2vw;
+            font-size: 1.2rem;
         }
     }
 
     div.fotografo-container {
         display: flex;
-        width: 25%;
+        width: 35%;
+        height: auto;
         align-items: center;
 
         img.fotografa {
             width: 100%;
             height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section#inicio {
+        flex-direction: column;
+        gap: 3rem;
+
+        div.fotografo-container {
+            width: 90%;
         }
     }
 }

@@ -5,7 +5,7 @@ import App from "./App.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import { faSearch, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faHeart, faPlus, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import {
   faInstagram,
@@ -21,7 +21,7 @@ library.add(
   faFacebook,
   faLinkedin,
   faTwitter,
-  faHeart
+  faHeart, faPlus, faBars,faXmark
 );
 
 const app = createApp(App);

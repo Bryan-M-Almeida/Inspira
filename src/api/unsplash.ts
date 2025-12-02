@@ -10,9 +10,21 @@ export const unsplash = axios.create({
   },
 });
 
-export const getPhotos = async (): Promise<UnsplashPhoto[]> => {
+export const getPhotos = async (
+  page: number,
+  perPage: number
+): Promise<{ data: UnsplashPhoto[]; total: number }> => {
   const res = await unsplash.get("/photos", {
-    params: { per_page: 12 },
+    params: {
+      page,
+      per_page: perPage,
+    },
   });
-  return res.data;
+
+  const total = Number(res.headers["x-total"]);
+
+  return {
+    data: res.data,
+    total,
+  };
 };

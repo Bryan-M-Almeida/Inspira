@@ -71,23 +71,25 @@
 footer {
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
     width: 100%;
     background-color: white;
-    margin-top: 5vh;
-    padding: 5vh 0;
+    margin-top: 5rem;
+    padding: 2.5rem 0;
 
     div.footer-container {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        padding: 1vh 3vw;
+        padding: 1rem 3rem;
         flex-wrap: wrap;
 
         div.contato-sobre-container {
             display: flex;
             justify-content: space-between;
-            gap: 10vw;
+            gap: 3rem;
             text-align: start;
             flex-wrap: wrap;
 
@@ -95,12 +97,12 @@ footer {
             div.sobre {
 
                 h3 {
-                    font-size: 1.9vw;
+                    font-size: 1.9em;
                 }
 
                 ul {
                     li {
-                        font-size: 1.2vw;
+                        font-size: 1.2em;
 
                         a {
                             color: #262626;
@@ -118,19 +120,18 @@ footer {
         form.newslatter-container {
             display: flex;
             flex-direction: column;
-            gap: 3vh;
+            gap: 3rem;
             align-items: start;
             justify-content: space-between;
 
             h3 {
-                font-size: 1.9vw;
+                font-size: 1.9em;
             }
 
             input[type="email"] {
                 border: none;
                 outline: none;
-                width: 100%;
-                font-size: 1vw;
+                font-size: 1rem;
             }
 
             button[type="submit"] {
@@ -138,8 +139,8 @@ footer {
                 border-radius: 5px;
                 background-color: #E1306C;
                 color: white;
-                font-size: 1.2vw;
-                padding: 1vh 1.5vw;
+                font-size: 1.2em;
+                padding: 0.41rem 0.5rem;
                 cursor: pointer;
                 transition: .3s;
 
@@ -155,11 +156,11 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 3vw;
+        gap: 3rem;
 
         span {
             display: flex;
-            font-size: 3vw;
+            font-size: 3em;
             color: #E1306C;
             cursor: pointer;
             transition: .3s;
@@ -167,6 +168,29 @@ footer {
             &:hover {
                 color: #cf3367;
                 transform: translateY(-5%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer {
+        div.footer-container {
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            div.contato-sobre-container {
+                justify-content: center;
+            }
+
+            form.newslatter-container {
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    text-align: center;
+                }
             }
         }
     }
